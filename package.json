@@ -1,0 +1,15 @@
+{
+  "name": "austin-website",
+  "version": "1.0.0",
+  "description": "A Webpage for Austin to Display his Vocal Arrangements",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "author": "thegouge",
+  "license": "ISC"
+}
