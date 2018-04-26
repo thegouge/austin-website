@@ -1,3 +1,56 @@
 * {
     margin: 0;
 }
+
+
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-areas: ". a b";
+    grid-template-columns: 34% 34% 31%;
+    background: #222;
+    color: #777;
+    padding: 10px;
+    text-align: center;
+}
+
+footer img {
+    display: block;
+    border-radius: 5px;
+    width: 80px;
+    margin: 0 auto 5px;
+}
+
+.self {
+    grid-area: a;
+    width: 100%;
+    text-align: center;
+}
+
+.attribution {
+    margin-left: 50px;
+    grid-area: b;
+    text-align: left;
+    overflow: hidden;
+}
+
+footer ul {
+    padding: 0;
+    text-align: center;
+    display: block;
+}
+
+footer ul li {
+    text-align: left;
+}
+
+.credit {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.credit:hover {
+    color: orange;
+    transition: 0.5s;
+}
