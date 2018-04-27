@@ -7,20 +7,25 @@
     <title>Austin Eamnarangkool</title>
 
     <link rel="stylesheet" href="assets/css/master.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+
+    <script src="http://www.lalit.org/wordpress/wp-content/uploads/2008/05/fontdetect.js?ver=0.3"></script>
+
 </head>
 <body>
     <header class="top-bot" id="top">
         <h2>
             <img src="assets/images/Sanic.jpg" alt="The Man Himself">
-            EAMNARANGKOOL
+            <a id="header-text" href="info.html">EAMNARANGKOOL</a>
         </h2>
         <nav class="dropdown">
             <img src="assets/images/menu-button.png" alt="">
                 <divs class="dropdown-content">
                     <ul>
-                        <a class="link" href="#"><li>Info</li></a>
-                        <a class="link" href="#"><li>Catalog</li></a>
-                        <a class="link" href="#"><li>Contact</li></a>
+                        <a class="link" href="info.html"><li>Info</li></a>
+                        <a class="link" href="catalog.html"><li>Catalog</li></a>
+                        <a class="link" href="contact.html"><li>Contact</li></a>
                     </ul>
                 </div>
         </nav>
@@ -28,7 +33,19 @@
     </header>
 
     <main id="page">
+        <section id="main">
+            <div class="picture-link" id="a-cappella">
+                <a href="#" class="link-inside"><h2 class="section-header">A-CAPPELLA</h2></a>
+            </div>
 
+            <div class="picture-link" id="choir">
+                <a href="#" class="link-inside"><h2 class="section-header">CHOIR</h2></a>
+            </div>
+
+            <div class="picture-link" id="jazz">
+                <a href="#" class="link-inside"><h2 class="section-header">YA LIKE JAZZ?</h2></a>
+            </div>
+        </section>
     </main>
 
     <footer class="top-bot" id="bot">
@@ -52,6 +69,7 @@
         </div>
     </footer>
 
-    <script src="staticjs/format.js"></script>
+    <script src="staticjs/master.js"></script>
+    <script src="staticjs/index.js"></script>
 </body>
 </html>

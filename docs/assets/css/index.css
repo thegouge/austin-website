@@ -1,0 +1,42 @@
+#main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "a b c";
+}
+    #a-cappella {
+        grid-area: a;
+        background-image: url("../images/a-cappella.jpeg");
+    }
+    #jazz {
+        grid-area: c;
+        background-image: url("../images/sax.jpg");
+    }
+    #choir {
+        grid-area: b;
+        background-image: url("../images/choir.jpg");
+    }
+
+    .picture-link {
+        display: block;
+        height: 100%;
+        background-size: cover;
+        color: rgb(161, 161, 161);
+    }
+        .link-inside {
+            padding: 20px;
+            padding-top: 0px;
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .section-header {
+            margin-top: -22px;
+            background: white;
+            padding-top: 50px;
+        }
+        
+        .section-header:hover {
+            color: orange;
+            transition: 0.5s;
+        }
