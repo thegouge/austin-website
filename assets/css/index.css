@@ -1,36 +1,54 @@
 #main {
     width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-areas: "a b c";
+    display: flex;
 }
     #a-cappella {
-        grid-area: a;
+        width: 100%;
         background-image: url("../images/a-cappella.jpeg");
+        transition: width 0.5s;
     }
+        #a-cappella:hover {
+            width: 200%;
+            transition: 0.5s;
+        }
+
     #jazz {
-        grid-area: c;
+        width: 100%;
         background-image: url("../images/sax.jpg");
+        transition: width 0.5s;
     }
+        #jazz:hover {
+            width: 200%;
+            transition: 0.5s;
+        }
+
     #choir {
-        grid-area: b;
+        width: 100%;
         background-image: url("../images/choir.jpg");
+        transition: width 0.5s;
     }
+        #choir:hover {
+            width: 200%;
+            transition: 0.5s;
+        }
 
     .picture-link {
         display: block;
         height: 100%;
         background-size: cover;
         color: rgb(161, 161, 161);
+        border: 3px solid white;
     }
         .link-inside {
             padding: 20px;
-            padding-top: 0px;
+            padding-top: 10px;
             color: inherit;
             text-decoration: none;
         }
 
         .section-header {
+            width: 100%;
             margin-top: -22px;
             background: white;
             padding-top: 50px;
@@ -40,3 +58,29 @@
             color: orange;
             transition: 0.5s;
         }
+
+@media all and (max-width: 1000px) {
+    #main {
+        flex-direction: column;
+    }
+
+    .picture-link {
+        height: 100px;
+        width: auto;
+    }
+
+    #a-cappella:hover {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    #jazz:hover {
+        width: 100%;
+        transition: 0.5s;
+    }
+
+    #choir:hover {
+        width: 100%;
+        transition: 0.5s;
+    }
+}
