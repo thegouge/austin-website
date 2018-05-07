@@ -26,7 +26,6 @@ header {
     #header-text {
         font-size: 90px;
         font-weight: bold;
-        height: 90px;
         display: inline-block;
         transform: translateY(-10px);
         cursor: pointer;
@@ -145,16 +144,15 @@ footer ul li {
 }
 
 @media all and (max-width: 1000px) {
-    header {
-        width: 100%;
-    }
-    footer {
-        width: 100%;
-    }
     #header-text {
-        font-size: 30px;
-        right: 100;
-        top: 10000;
+        font-size: 35px;
+        transform: translateY(12px);
     }
 
+    header {
+       height: auto; 
+    }
+        .dropdown img {
+            width: 30px;
+        }
 }
